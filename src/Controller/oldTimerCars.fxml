@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CarsController">
+   <bottom>
+      <ToolBar prefHeight="0.0" prefWidth="460.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="constructorTextField" layoutX="143.0" layoutY="31.0" />
+            <TextField fx:id="modelTextField" layoutX="143.0" layoutY="80.0" />
+            <TextField fx:id="yearTextField" layoutX="143.0" layoutY="136.0" />
+            <TextField fx:id="colorTextField" layoutX="143.0" layoutY="195.0" />
+            <Label layoutX="68.0" layoutY="35.0" text="Constructor" />
+            <Label layoutX="70.0" layoutY="84.0" text="Model" />
+            <Label layoutX="78.0" layoutY="142.0" text="Year" />
+            <Label layoutX="78.0" layoutY="199.0" text="Color" />
+          <Button fx:id="addCarsButton" layoutX="14.0" layoutY="240.0" mnemonicParsing="false" onAction="#addCarsButtonClicked" text="Add Cars" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
